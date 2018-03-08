@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-
-hi
-
 <div class="pageContent">
         
           <?php if (ot_get_option('archivebanner') != '') { ?>

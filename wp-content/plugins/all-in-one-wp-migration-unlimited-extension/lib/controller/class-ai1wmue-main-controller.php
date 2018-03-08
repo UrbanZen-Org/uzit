@@ -82,6 +82,9 @@ class Ai1wmue_Main_Controller {
 	private function activate_filters() {
 		add_filter( 'ai1wm_max_file_size', array( $this, 'max_file_size' ) );
 
+		// Add links to plugin list page
+		add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 5, 2 );
+
 		return $this;
 	}
 
@@ -119,6 +122,19 @@ class Ai1wmue_Main_Controller {
 			</p>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Add links to plugin list page
+	 *
+	 * @return array
+	 */
+	public function plugin_row_meta( $links, $file ) {
+		if ( $file == AI1WMUE_PLUGIN_BASENAME ) {
+			$links[] = Ai1wm_Template::get_content( 'main/user-guide', array(), AI1WMUE_TEMPLATES_PATH );
+		}
+
+		return $links;
 	}
 
 	/**
