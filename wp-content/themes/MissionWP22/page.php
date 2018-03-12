@@ -2,7 +2,6 @@
 
 
  <?php 
-
 $headerimg = get_post_meta(get_the_ID(), 'headerimg', true);
 $sidebar = get_post_meta(get_the_ID(), 'sidebar', true);
 

@@ -47,6 +47,7 @@ include('includes/cpt-voice.php');
 include('includes/cpt-press.php');
 include('includes/cpt-team.php');
 include('includes/cpt-training.php');
+include('includes/cpt-howiuzit.php');
 
 include_once("includes/partners-meta-boxes.php");
 include_once("includes/blog-meta-boxes.php");
@@ -642,4 +643,6 @@ function new_content_more($more) {
        return ' <a href="' . get_permalink() . "#more-{$post->ID}\" class=\"button spacing pull-left\">Read More</a>";
 }   
 add_filter( 'the_content_more_link', 'new_content_more' );
+
+
 ?>
