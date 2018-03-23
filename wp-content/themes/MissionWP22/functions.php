@@ -392,8 +392,8 @@ function mission_scripts_styles() {
         wp_enqueue_style( 'mission-fontello', get_template_directory_uri() . '/font/css/fontello.css', array( 'mission-style' ), '20121010' );
         wp_enqueue_style( 'mission-fontelloie7', get_template_directory_uri() . '/font/css/fontello-ie7.css', array( 'mission-style' ), '20121010' );*/
         wp_enqueue_style( 'mission-base', get_template_directory_uri() . '/stylesheets/base.css', array( 'mission-style' ), '20121010' );
-  
-        
+  			// How We Uzit
+        wp_enqueue_style( 'new-styles', get_template_directory_uri() . '/assets/css/main.css');
 	/*
 	 * Loads the Internet Explorer specific stylesheet.
 	 */
@@ -643,6 +643,7 @@ function new_content_more($more) {
        return ' <a href="' . get_permalink() . "#more-{$post->ID}\" class=\"button spacing pull-left\">Read More</a>";
 }   
 add_filter( 'the_content_more_link', 'new_content_more' );
+add_theme_support('post-thumbnails');
 
-
-?>
+add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
+add_filter('show_admin_bar', '__return_false'); // Remove admin bar

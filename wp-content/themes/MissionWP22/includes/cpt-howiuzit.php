@@ -29,11 +29,34 @@ function create_how_i_uzit() {
     'menu_position'      => 34,
     'rewrite'            => array( 'slug' => 'how-i-uzit'),
     'capability_type'    => 'post',
-    'has_archive'        => false,
+    'has_archive'        => true,
     'hierarchical'       => true,
-    'taxonomies'          => array('category','post_tag'),
-    'supports'           => array('title','thumbnail', 'editor','excerpt')
+    'taxonomies'          => array('post_tag'),
+    'supports'           => array('title','thumbnail', 'editor','excerpt',)
   );
   register_post_type( 'how_i_uzit', $args );
+  register_taxonomy('how_i_uzit_category', 'how_i_uzit', 
+         
+        array( 
+            'hierarchical' => true, 
+            'labels' => array(
+                  'name' => 'Categories',
+                  'singular_name' => 'How I Uzit Categories',
+                  'search_items' =>  'Search How I Uzit Categories',
+                  'popular_items' => 'Popular How I Uzit Categories',
+                  'all_items' => 'All How I Uzit Categories',
+                  'parent_item' => 'Parent Categories',
+                  'parent_item_colon' => 'Parent Category:',
+                  'edit_item' => 'Edit How I Uzit Category',
+                  'update_item' => 'Update How I Uzit Category',
+                  'add_new_item' => 'Add New How I Uzit Category',
+                  'new_item_name' => 'New How I Uzit Category Name'
+            ),
+            'show_ui' => true,
+            'query_var' => true, 
+            'rewrite' => array('slug' => $url_rewrite)
+        ) 
+    ); 
+    flush_rewrite_rules();  
 }
 add_action( 'init', 'create_how_i_uzit' );
