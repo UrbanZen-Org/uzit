@@ -53,7 +53,6 @@
             </div>
            
         </div>
-  <?php wp_bottontp(); ?>
     </div>
 </div>
 
