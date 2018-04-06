@@ -28,6 +28,7 @@ $stories = get_field('featured_stories');
 					<img src="<?php echo $thumbnail; ?>">
 					<h4><?php echo get_the_title($story->ID) ?></h4>
 				</div>
+				 [spu popup="5510"]Click here[/spu]
 			<?php endforeach; ?>
 			<?php foreach ($stories as $story): ?>
 				<div class="featured-story">

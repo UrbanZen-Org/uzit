@@ -11,8 +11,8 @@ const config = {
 	context: path.resolve(__dirname),
 	devtool: 'source-map inline-source-map',
 	entry: [
-		'./src/scss/main.scss',
-		'./src/js/main.js'
+		'./src/scss/main.scss'
+		// ,'./src/js/main.js'
 	],
 	output: {
 		filename: 'wp-content/themes/MissionWP22/assets/js/[name].js'
@@ -55,7 +55,7 @@ const config = {
   resolve: {
     modules: [
       path.resolve(__dirname, 'src'),
-      path.resolve(__dirname, 'src/js'),
+      // path.resolve(__dirname, 'src/js'),
       path.resolve(__dirname, 'src/scss'),
       path.resolve(__dirname, 'node_modules')
     ],

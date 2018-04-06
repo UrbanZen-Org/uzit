@@ -20,6 +20,13 @@
 				justify-content: center;
 			}
 			background: black;
+			position: relative;
+			.back-to-hiu{
+				position: absolute;
+				left: 0;
+				top: 0px;
+				padding-top: 40px;
+			}
 			.post-title-excerpts{
 				padding: 2em 0;
 				@media screen and (min-width: 768px) {
@@ -27,7 +34,7 @@
 					padding: 0;
 				}
 				color: #4ac6e2;
-				text-align: center;
+				text-align: left;
 				h1,p{
 					color: #4ac6e2;
 				}

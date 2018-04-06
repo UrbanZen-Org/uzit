@@ -6,6 +6,7 @@ setup_postdata($post);
 
   		<div class="how-i-uzit-post-header">
         <div class="how-i-uzit-post-content">
+        	<a href="" class="back-to-hiu">< Back to How I Uzit</a>
     			<div class="post-title-excerpts">
   	  			<h1><?php the_title(); ?></h1>
   	  			<div class="post-excerpt">
@@ -34,7 +35,7 @@ setup_postdata($post);
 
 <!-- Metadata -->
 <?php $media = get_attached_media( 'image' ); ?>
-<?php print_r(wp_get_attachment_image_src($media[0]->ID)); ?>
+
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
