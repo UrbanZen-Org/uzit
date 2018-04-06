@@ -53,7 +53,7 @@
             </div>
            
         </div>
-  <?php @wp_bottontp(); ?>
+  <?php wp_bottontp(); ?>
     </div>
 </div>
 
@@ -148,7 +148,7 @@
     </div>
 </div>
 
-<?php wp_footer(); ?> 
+ 
     
 <!-- page custom css -->
 <?php
@@ -161,17 +161,18 @@
 <?php endif; ?>
 <!-- end -->
     
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-48370160-1']);
-            _gaq.push(['_trackPageview']);
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-48370160-1']);
+    _gaq.push(['_trackPageview']);
 
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5970bbe876205bd1"></script> 
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5970bbe876205bd1"></script> 
+<?php wp_footer(); ?>
 </body>
 </html>
