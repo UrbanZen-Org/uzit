@@ -19,12 +19,12 @@ setup_postdata($post);
         </div>
   		</div>	  	
   		<div class="prev-next-story">
-    		<?php $prev_post = get_previous_post(); 
-    					$next_post = get_next_post(); 
+    		<?php $prev_post = get_adjacent_post(false, '', true); 
+    					$next_post = get_adjacent_post(false, '', false); 
     		?>
-      	<a href="<?php echo get_permalink($prev_post->ID); ?>" class="prev-story"><img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $prev_post->ID ), 'thumbnail')[
+      	<a href="<?php echo get_permalink($prev_post); ?>" class="prev-story"><img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $prev_post ), 'thumbnail')[
       	0]; ?>"><span><div class="arrow"></div>Previous<br> Story</span></a>
-      	<a href="<?php echo get_permalink($next_post->ID); ?>" class="next-story"><img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $next_post->ID ), 'thumbnail')[
+      	<a href="<?php echo get_permalink($next_post); ?>" class="next-story"><img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $next_post ), 'thumbnail')[
       	0]; ?>"><span>Next<br> Story<div class="arrow"></div></span></a>
     	</div>
       <div class="container noBannerContent">
