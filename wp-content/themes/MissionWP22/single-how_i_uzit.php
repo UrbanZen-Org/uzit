@@ -19,8 +19,8 @@ setup_postdata($post);
         </div>
   		</div>	  	
   		<div class="prev-next-story">
-    		<?php $prev_post = get_previous_post(true); 
-    					$next_post = get_next_post(true); 
+    		<?php $prev_post = get_previous_post(); 
+    					$next_post = get_next_post(); 
     		?>
       	<a href="<?php echo get_permalink($prev_post->ID); ?>" class="prev-story"><img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $prev_post->ID ), 'thumbnail')[
       	0]; ?>"><span><div class="arrow"></div>Previous<br> Story</span></a>
