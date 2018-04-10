@@ -31,7 +31,9 @@ setup_postdata($post);
         <div class="post-content">
           <?php the_content(); ?>
           <a data-target="#page_content" class="back-to-top"><div class="up-arrow"></div>TOP</a>
-        </div>  
+        	<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>  
+        </div>
+        
       </div>
 	    <?php get_template_part( 'single-featured-how_i_uzit' ); ?>
   	</div>
@@ -44,6 +46,8 @@ setup_postdata($post);
 
 <!-- Metadata -->
 <?php $media = get_attached_media( 'image' ); ?>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5accafeeef677a1d"></script>
 
 <script type="application/ld+json">
 {
