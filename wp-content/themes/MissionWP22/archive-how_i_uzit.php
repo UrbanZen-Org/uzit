@@ -1,10 +1,26 @@
 <?php get_header();
-setup_postdata($post);
+
 ?>
 <div class="pageContent how-i-uzit-archive">
 	<div class="how-i-uzit-archive">
-		<div class="archive-header">
+		<div class="archive-header" style="background-image: url('<?php echo get_field('header_image','option'); ?>');">
+			<h1>How I Uzit</h1>
+		</div>
+		<div class="how-i-uzit-posts">
 			
+			<?php foreach ($posts as $post): ?>
+				<?php setup_postdata($post); ?>
+				<a class="hiu-post" href="<?php the_permalink(); ?>">					
+					<img src="<?php the_post_thumbnail_url('medium'); ?>">
+					<div class="post-titles">
+						<div>
+						<h2><?php the_title(); ?></h2>
+						<?php the_excerpt();?>	
+						</div>
+					</div>
+					
+				</a>
+			<?php endforeach; ?>
 		</div>
 
 </div>

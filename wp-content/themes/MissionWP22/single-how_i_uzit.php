@@ -1,12 +1,12 @@
 <?php get_header();
 setup_postdata($post);
 ?>
-<div class="pageContent how-i-uzit-content">
+<div class="pageContent how-i-uzit-content" id="page_content">
   	<div class="how-i-uzit-post">
 
   		<div class="how-i-uzit-post-header">
-        <div class="how-i-uzit-post-content">
-        	<a href="" class="back-to-hiu">< Back to How I Uzit</a>
+        <div class="how-i-uzit-post-content" >
+        	<a href="/how-i-uzit" class="back-to-hiu">< Back to How I Uzit</a>
     			<div class="post-title-excerpts">
   	  			<h1><?php the_title(); ?></h1>
   	  			<div class="post-excerpt">
@@ -18,19 +18,28 @@ setup_postdata($post);
   				</div>
         </div>
   		</div>	  	
+  		<div class="prev-next-story">
+    		<?php $prev_post = get_previous_post(true); 
+    					$next_post = get_next_post(true); 
+    		?>
+      	<a href="<?php echo get_permalink($prev_post->ID); ?>" class="prev-story"><img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $prev_post->ID ), 'thumbnail')[
+      	0]; ?>"><span><div class="arrow"></div>Previous<br> Story</span></a>
+      	<a href="<?php echo get_permalink($next_post->ID); ?>" class="next-story"><img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $next_post->ID ), 'thumbnail')[
+      	0]; ?>"><span>Next<br> Story<div class="arrow"></div></span></a>
+    	</div>
       <div class="container noBannerContent">
         <div class="post-content">
           <?php the_content(); ?>
-          <div class="back-to-top"><div class="up-arrow"></div>TOP</div>
+          <a data-target="#page_content" class="back-to-top"><div class="up-arrow"></div>TOP</a>
         </div>  
-      </div>	
+      </div>
 	    <?php get_template_part( 'single-featured-how_i_uzit' ); ?>
   	</div>
 
 </div>
 
 
-<link rel='stylesheet' id='admin-bar-css'  href='/wp-content/themes/MissionWP22/stylesheets/custom/blog.css' type='text/css' media='all' />
+<link rel="stylesheet" id="admin-bar-css"  href="/wp-content/themes/MissionWP22/stylesheets/custom/blog.css" type="text/css" media="all" />
 <?php get_footer(); ?>
 
 <!-- Metadata -->

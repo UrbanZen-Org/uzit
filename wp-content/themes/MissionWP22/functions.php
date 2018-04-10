@@ -394,7 +394,11 @@ function mission_scripts_styles() {
         wp_enqueue_style( 'mission-base', get_template_directory_uri() . '/stylesheets/base.css', array( 'mission-style' ), '20121010' );
   			// How We Uzit
         wp_enqueue_style( 'new-styles', get_template_directory_uri() . '/assets/css/main.css');
-	/*
+	
+    wp_enqueue_script( 'new-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true );
+
+
+    /*
 	 * Loads the Internet Explorer specific stylesheet.
 	 */
         
@@ -647,3 +651,14 @@ add_theme_support('post-thumbnails');
 
 add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 add_filter('show_admin_bar', '__return_false'); // Remove admin bar
+function change_menus()
+{
+    remove_menu_page( 'admin.php?page=acf-options-options');     
+    add_submenu_page('edit.php?post_type=how_i_uzit','settings', 'How I Uzit Settings', 'edit_pages', 'admin.php?page=acf-options-options');
+}
+add_action( 'admin_menu', 'change_menus' );
+// Add Options Page
+if (function_exists('acf_add_options_page')) 
+{
+  acf_add_options_page('Options');
+}
