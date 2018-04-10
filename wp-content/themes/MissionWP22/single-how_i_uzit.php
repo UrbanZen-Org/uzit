@@ -46,8 +46,7 @@ setup_postdata($post);
 
 <!-- Metadata -->
 <?php $media = get_attached_media( 'image' ); ?>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5accafeeef677a1d"></script>
+
 
 <script type="application/ld+json">
 {
@@ -85,3 +84,5 @@ setup_postdata($post);
   "description": "<?php echo $post->post_excerpt; ?>"
 }
 </script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5accafeeef677a1d"></script>
