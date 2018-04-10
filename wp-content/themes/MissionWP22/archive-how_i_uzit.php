@@ -11,7 +11,7 @@
 			<?php foreach ($posts as $post): ?>
 				<?php setup_postdata($post); ?>
 				<a class="hiu-post" href="<?php the_permalink(); ?>">					
-					<img src="<?php the_post_thumbnail_url('medium'); ?>">
+					<img src="<?php the_post_thumbnail_url('large'); ?>">
 					<div class="post-titles">
 						<div>
 						<h2><?php the_title(); ?></h2>
