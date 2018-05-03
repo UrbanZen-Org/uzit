@@ -96,7 +96,7 @@
 	.how-i-uzit-post-header{
 		background: black;
 		.how-i-uzit-post-content{
-			max-width: 1260px;
+			max-width: 960px;
 			margin: 0 auto;
 			width: 100%;
 			@media screen and (min-width: 768px) {		
@@ -179,6 +179,8 @@
 				text-transform: uppercase;
 				color: transparent;
 				@include transition((color .3s ease-in-out, background .3s ease-in-out));
+				background: rgba(0,0,0,.6);
+					color: white;
 			}
 			.arrow{
 				display: block;
