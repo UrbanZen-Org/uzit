@@ -8,10 +8,12 @@ setup_postdata($post);
         <div class="how-i-uzit-post-content" >
         	<a href="/how-i-uzit" class="back-to-hiu">< Back to How I Uzit</a>
     			<div class="post-title-excerpts">
-  	  			<h1><?php the_title(); ?></h1>
-  	  			<div class="post-excerpt">
-  	  				<?php the_excerpt();?>
-  	  			</div>
+            <div class="title-inner">
+    	  			<h1><?php the_title(); ?></h1>
+    	  			<div class="post-excerpt">
+    	  				<?php the_excerpt();?>
+    	  			</div>
+            </div>
     			</div>
   				<div class="post-thumbnail">
   					<img src="<?php the_post_thumbnail_url(); ?>">

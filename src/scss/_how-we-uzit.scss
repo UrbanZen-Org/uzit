@@ -106,7 +106,7 @@
 	.how-i-uzit-post-header{
 		background: black;
 		.how-i-uzit-post-content{
-			max-width: 1260px;
+			max-width: 100%;
 			margin: 0 auto;
 			width: 100%;
 			@media screen and (min-width: 768px) {		
@@ -131,6 +131,10 @@
 				@media screen and (min-width: 768px) {
 					width: 50%;	
 					padding: 0 20px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					
 				}
 				color: #4ac6e2;
 				text-align: left;
@@ -154,7 +158,7 @@
 					width: 50%;	
 				}
 				img{
-					max-width: 100%;
+					width: 100%;
 				}
 			}
 
@@ -243,7 +247,7 @@
 		}
 	}
 	.post-content{
-		max-width: 960px;
+		max-width: 1260px;
 		margin: 0 auto;
 		padding: 3.5em 2em 3.5em;
 		color: black;
