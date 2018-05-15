@@ -64,7 +64,6 @@
 								<i><?php echo $training_location; ?></i></p>
                                 <div class="quote">
                                     <h3><?php echo $training_quote; ?></h3>
-									
                                 </div>
                                 <div class="summary">
                                     <?php the_content('Learn More'); ?>

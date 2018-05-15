@@ -48,7 +48,7 @@
                     <li><a href="https://twitter.com/urban_zen/" target="_blank">Twitter</a></li>
                     <li><a href="http://vimeo.com/channels/uzit/" target="_blank">Vimeo</a></li>
                     <li><a href="/uzit/contact/">Contact</a></li>
-                    <li><span class="copyright">&copy;2016 Urban Zen Foundation. All rights reserved.</span></li>
+                    <li><span class="copyright">&copy;2018 Urban Zen Foundation. All rights reserved.</span></li>
                 </ul>
             </div>
            

@@ -11,12 +11,27 @@
 .how-i-uzit-archive{
 	padding-top: 0;
 	.archive-header{
+		max-width: 1260px;
+		margin: 0 auto;
 		height: 60vh;
 		background-position: center;
+		background-size: cover;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		text-transform: uppercase;
+		background-repeat: no-repeat;
+		&.hide-desktop{
+			height: auto;
+			@media screen and (min-width: 768px) {	
+				display: none;
+			}
+		}
+		&.hide-mobile{
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
 		h1{
 			color: #6DC4DF;
 			letter-spacing: .2em;
@@ -51,7 +66,7 @@
 				.post-titles{
 					background-color: rgba(0,0,0,0.5);
 					h2,p{
-						color: #6DC4DF;
+						color: #1b1b1b;
 					}
 				}
 			}
@@ -106,7 +121,7 @@
 	.how-i-uzit-post-header{
 		background: black;
 		.how-i-uzit-post-content{
-			max-width: 1260px;
+			max-width: 100%;
 			margin: 0 auto;
 			width: 100%;
 			@media screen and (min-width: 768px) {		
@@ -117,13 +132,16 @@
 			background: black;
 			position: relative;
 			.back-to-hiu{
-				padding-left: 20px;
+				position: relative;
+				top: -30px;
+				color: white;
+				// padding-left: 20px;
 				@media screen and (min-width: 768px) {
-					position: absolute;
-					left: 20px;
-					top: 0px;
-					padding-top: 40px;
-					padding-left: 0;
+					// position: absolute;
+					// left: 20px;
+					// top: 0px;
+					// padding-top: 40px;
+					// padding-left: 0;
 				}
 			}
 			.post-title-excerpts{
@@ -133,10 +151,13 @@
 					padding: 0 20px;
 
 				}
-				color: #4ac6e2;
-				text-align: left;
+				color: white;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				h1,p{
-					color: #4ac6e2;
+					color: white;
 				}
 				h1{
 					font-size: 33px;
@@ -169,6 +190,7 @@
 			display: block;
 		}
 		.prev-story,.next-story{
+			display: none;
 			position: absolute;
 			width: 150px;
 			top: 140px;
@@ -259,19 +281,20 @@
 			margin: 0;
 			font-style: normal;
 			p{
-				font-size: 30px;
+				font-size: 24px;
 				line-height: 1.35em!important;
 				margin-bottom: 2.6em;
 				letter-spacing: .025em;
 				font-style: normal;
 				@include respond-min(1260)
 				{
-					font-size: 40px;
+					font-size: 32px;
 				}
 			}
 		}
 		p{
-			font-size: 19px;
+			strong{}
+			font-size: 16px;
 			margin-bottom: 2em;
 			line-height: 1.6em;
 			letter-spacing: .05em;
@@ -353,7 +376,7 @@
 					padding: 0 10px;
 				}
 				@media screen and (min-width: 768px) {
-					width: 33.334%;
+					width: 25%;
 				}
 				img{
 					max-width: 100%;

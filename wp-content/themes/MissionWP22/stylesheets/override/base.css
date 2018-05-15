@@ -42,7 +42,7 @@ html{
     font-family: "Conv_HelveticaNeueLTStd-Lt", "Helvetica", "Open Sans", Arial, serif;
 }
 body{
-    padding-top:102px;
+    padding-top:100px;
 }
 .container.noBannerContent{
 	padding-top: 20px !important;
@@ -249,10 +249,11 @@ opacity: 1;
 }
 #topbar{
     z-index:3000;
-    /*border-bottom: 1px solid #555;*/
-    box-shadow: 1px 0px 5px 0px #666;
+    border-bottom: 1px solid #555;
+    /*box-shadow: 1px 0px 5px 0px #666;
     -webkit-box-shadow: 1px 0px 5px 0px #666;
-    -moz-box-shadow:    1px 0px 5px 0px #666;
+    -moz-box-shadow:    1px 0px 5px 0px #666;*/
+    -box-sizing: border-box;
 }
 .trans_bg{
     background: url('../images/trans_bg.png') repeat 0 0;

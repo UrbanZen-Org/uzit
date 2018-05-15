@@ -6,9 +6,10 @@ setup_postdata($post);
 
   		<div class="how-i-uzit-post-header">
         <div class="how-i-uzit-post-content" >
-        	<a href="/how-i-uzit" class="back-to-hiu">< Back to How I Uzit</a>
+        	
     			<div class="post-title-excerpts">
             <div class="title-inner">
+              <a href="/how-i-uzit" class="back-to-hiu">How I Uzit</a>
     	  			<h1><?php the_title(); ?></h1>
     	  			<div class="post-excerpt">
     	  				<?php the_excerpt();?>
@@ -33,7 +34,9 @@ setup_postdata($post);
         <div class="post-content">
           <?php the_content(); ?>
           <a data-target="#page_content" class="back-to-top"><div class="up-arrow"></div>TOP</a>
-        	<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>  
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5accafeeef677a1d"></script>
+
         </div>
         
       </div>

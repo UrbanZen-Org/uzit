@@ -3,7 +3,10 @@
 ?>
 <div class="pageContent how-i-uzit-archive">
 	<div class="how-i-uzit-archive">
-		<div class="archive-header" style="background-image: url('<?php echo get_field('header_image','option'); ?>');">
+		<div class="archive-header hide-mobile" style="background-image: url('<?php echo get_field('header_image','option'); ?>');">
+			<h1>How I Uzit</h1>
+		</div>
+		<div class="archive-header hide-desktop" style="background-image: url('<?php echo get_field('header_image_mobile','option'); ?>');">
 			<h1>How I Uzit</h1>
 		</div>
 		<div class="how-i-uzit-posts">
@@ -15,7 +18,7 @@
 					<div class="post-titles">
 						<div>
 						<h2><?php the_title(); ?></h2>
-						<?php the_excerpt();?>	
+						<p><?php echo get_field("location"); ?></p>
 						</div>
 					</div>
 					

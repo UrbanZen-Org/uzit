@@ -4,7 +4,7 @@
 
 
 <div id="UzitContent" class="homePageContent container">
-    <div class="sixteen columns">
+    <div class="sixteen columns video-responsive">
         <iframe 
             src="https://player.vimeo.com/video/180962509?color=ffffff&title=0&byline=0&portrait=0" 
             width="100%" 
