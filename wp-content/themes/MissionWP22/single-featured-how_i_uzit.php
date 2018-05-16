@@ -1,8 +1,7 @@
 <?php 
-
 $args = array(
 	'post_type'              => array( 'how_i_uzit' ),
-	'post_status'            => array( 'published' ),
+	'post_status'            => 'publish',
 	'posts_per_page'         => '6',
 	'orderby'                => 'date',
 );

@@ -4,8 +4,8 @@
 <div class="pageContent how-i-uzit-archive">
 	<div class="how-i-uzit-archive">
 		<div class="archive-header">
-			<img class="hide-mobile" src="<?php echo get_field('header_image','HIU_setting'); ?>" >
-			<img class="hide-desktop" src="<?php echo get_field('header_image_mobile','HIU_setting'); ?>" >
+			<img class="hide-mobile" src="<?php echo get_field('header_image','options'); ?>" >
+			<img class="hide-desktop" src="<?php echo get_field('header_image_mobile','options'); ?>" >
 			<div class="archive-header-content">
 				<div class="content">
 					<h1>How I Uzit</h1>	

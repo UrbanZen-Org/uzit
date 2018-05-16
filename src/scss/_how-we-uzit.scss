@@ -124,9 +124,10 @@
 .how-i-uzit-content{
 	background-color: white;
 	padding-top: 0;
-	.container{
+	&.pageContent .how-i-uzit-post .container{
 		padding-top: 0!important;
 		background-color: white!important;
+
 	}
 }
 
@@ -398,7 +399,6 @@
 				box-sizing:border-box;
 				padding: 0 10px;
 				text-align: left;
-				
 				img{
 					max-width: 100%;
 				}
