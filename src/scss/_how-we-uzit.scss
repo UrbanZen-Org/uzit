@@ -34,15 +34,13 @@
 		}
 	}
 	.how-i-uzit-posts{
-		max-width: 1260px;
+		max-width: 960px;
 		margin: 4em auto;
 		@media screen and (min-width: 768px) {		
 			display: flex;
 			align-items: center;
 			justify-content: left;
 			flex-wrap: wrap;
-			margin-left: -10px;
-			margin-right: -10px;
 		}
 		.hiu-post{
 			box-sizing:border-box;
