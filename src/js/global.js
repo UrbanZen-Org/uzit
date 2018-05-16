@@ -34,7 +34,7 @@ var global = {
           centerPadding: '60px',
           prevArrow: false,
           nextArrow: false,
-          autoplay: 3000,
+          autoplay: 2800,
           responsive: [
           {
               breakpoint: 768,
