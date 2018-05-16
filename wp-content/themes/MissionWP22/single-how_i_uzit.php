@@ -17,10 +17,13 @@ setup_postdata($post);
             </div>
     			</div>
   				<div class="post-thumbnail">
-  					<img src="<?php the_post_thumbnail_url(); ?>">
+  					<img class="hide-mobile" src="<?php the_post_thumbnail_url(); ?>">
+            <img class="hide-desktop" src="<?php get_field('mobile_featured_image'); ?>">
   				</div>
         </div>
-  		</div>	  	
+  		</div>	  
+
+      <?php /*	Prev Next
   		<div class="prev-next-story">
     		<?php $prev_post = get_adjacent_post(false, '', true); 
     					$next_post = get_adjacent_post(false, '', false); 
@@ -30,6 +33,8 @@ setup_postdata($post);
       	<a href="<?php echo get_permalink($next_post); ?>" class="next-story"><img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $next_post ), 'thumbnail')[
       	0]; ?>"><span>Next<br> Story<div class="arrow"></div></span></a>
     	</div>
+      */ ?>
+
       <div class="container noBannerContent">
         <div class="post-content">
           <?php the_content(); ?>

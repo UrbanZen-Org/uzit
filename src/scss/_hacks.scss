@@ -19,3 +19,13 @@
 		float: none!important;
         
    }
+.hide-desktop{
+	@media screen and (min-width: 768px) {	
+		display: none;
+	}
+}
+.hide-mobile{
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
