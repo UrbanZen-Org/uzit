@@ -14,13 +14,13 @@ $stories = new WP_Query( $args );
 		<div class="featured-stories">
 			<?php foreach ($stories->posts as $story): ?>
 				<?php setup_postdata($story); ?>
-				<div class="featured-story">
+				<a href="<?php the_permalink(); ?>" class="featured-story">
 					<?php 
 						$thumbnail = wp_get_attachment_url( get_post_thumbnail_id($story->ID));
 					?>
 					<img src="<?php echo $thumbnail; ?>">
 					<h4><?php echo get_the_title($story->ID) ?></h4>
-				</div>
+				</a>
 			<?php endforeach; ?>			
 	</div>
 <?php endif; ?>
