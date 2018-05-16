@@ -19,14 +19,8 @@
 			max-width: 100%;
 		}
 		.archive-header-content{
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
+			padding: 0 20px;
+			box-sizing: border-box;
 			text-align: center;
 			p{
 				font-size: 18px;
@@ -166,6 +160,7 @@
 			.post-title-excerpts{
 				padding: 4em 20px 2em;
 				width: 100%;
+				box-sizing: border-box;
 				@media screen and (min-width: 768px) {
 					width: 50%;	
 					padding: 0 20px;

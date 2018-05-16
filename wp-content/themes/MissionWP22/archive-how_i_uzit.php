@@ -7,12 +7,10 @@
 			<img class="hide-mobile" src="<?php echo get_field('header_image','options'); ?>" >
 			<img class="hide-desktop" src="<?php echo get_field('header_image_mobile','options'); ?>" >
 			<div class="archive-header-content">
-				<div class="content">
-					<h1>How I Uzit</h1>	
-					<p><?php echo get_field('description','option'); ?></p>
-				</div>
+			<div class="container">
+				<h1>How I Uzit</h1>	
+				<p><?php echo get_field('description','option'); ?></p>	
 			</div>
-			
 		</div>
 		
 		<div class="how-i-uzit-posts">
