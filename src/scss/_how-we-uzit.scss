@@ -13,20 +13,28 @@
 	.archive-header{
 		max-width: 1260px;
 		margin: 0 auto;
-		height: 60vh;
-		background-position: center;
-		background-size: cover;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-transform: uppercase;
-		background-repeat: no-repeat;
-		&.hide-desktop{
-			height: auto;		
+		
+		position: relative;
+		img{
+			max-width: 100%;
+		}
+		.archive-header-content{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			text-align: center;
+			
 		}
 		h1{
 			color: #6DC4DF;
 			letter-spacing: .2em;
+			text-transform: uppercase;
+			margin-bottom: 30px;
 			@media screen and (min-width: 768px) {	
 				font-size: 90px;
 			}
@@ -34,7 +42,7 @@
 		}
 	}
 	.how-i-uzit-posts{
-		max-width: 1100px;
+		max-width: 1099px;
 		margin: 4em auto;
 		@media screen and (min-width: 768px) {		
 			display: flex;

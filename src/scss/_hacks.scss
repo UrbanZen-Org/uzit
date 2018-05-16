@@ -26,6 +26,6 @@
 }
 .hide-mobile{
 	@media screen and (max-width: 768px) {
-		display: none;
+	display: none!important;
 	}
 }

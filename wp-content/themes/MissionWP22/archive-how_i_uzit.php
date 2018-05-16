@@ -3,12 +3,18 @@
 ?>
 <div class="pageContent how-i-uzit-archive">
 	<div class="how-i-uzit-archive">
-		<div class="archive-header hide-mobile" style="background-image: url('<?php echo get_field('header_image','option'); ?>');">
-			<h1>How I Uzit</h1>
+		<div class="archive-header">
+			<img class="hide-mobile" src="<?php echo get_field('header_image','option'); ?>" >
+			<img class="hide-desktop" src="<?php echo get_field('header_image_mobile','option'); ?>" >
+			<div class="archive-header-content">
+				<div class="content">
+					<h1>How I Uzit</h1>	
+					<p><?php echo get_field('description','option'); ?></p>
+				</div>
+			</div>
+			
 		</div>
-		<div class="archive-header hide-desktop" style="background-image: url('<?php echo get_field('header_image_mobile','option'); ?>');">
-			<h1>How I Uzit</h1>
-		</div>
+		
 		<div class="how-i-uzit-posts">
 			
 			<?php foreach ($posts as $post): ?>
