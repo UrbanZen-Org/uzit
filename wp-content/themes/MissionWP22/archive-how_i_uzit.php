@@ -1,5 +1,5 @@
 <?php get_header();
-
+	$_REQUEST['html_title'] = 'How I Uzit';
 ?>
 <div class="pageContent how-i-uzit-archive">
 	<div class="how-i-uzit-archive">

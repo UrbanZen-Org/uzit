@@ -18,8 +18,8 @@ setup_postdata($post);
             </div>
     			</div>
   				<div class="post-thumbnail">
-  					<img class="hide-mobile" src="<?php the_post_thumbnail_url(); ?>">
-            <img class="hide-desktop" src="<?php get_field('mobile_featured_image'); ?>">
+  					<img class="hide-mobile" src="<?php echo get_field('main_image'); ?>">
+            <img class="hide-desktop" src="<?php echo get_field('main_image_mobile'); ?>">
   				</div>
         </div>
   		</div>	  
@@ -92,7 +92,7 @@ setup_postdata($post);
       "url": "http://s3-us-east-2.amazonaws.com/uzit-wordpress/wp-content/uploads/2013/05/28002830/uzit_logo_new1.png"
     }
   },
-  "description": "<?php echo $post->post_excerpt; ?>"
+  "description": "<?php echo addslashes($post->post_excerpt); ?>"
 }
 </script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->

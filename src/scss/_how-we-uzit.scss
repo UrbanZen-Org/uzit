@@ -28,13 +28,17 @@
 			top: 0;
 			bottom: 0;
 			text-align: center;
-			
+			p{
+				font-size: 18px;
+				max-width: 600px;
+				margin: 0 auto;
+			}
 		}
 		h1{
 			color: #6DC4DF;
 			letter-spacing: .2em;
 			text-transform: uppercase;
-			margin-bottom: 30px;
+			margin-bottom: 48px;
 			@media screen and (min-width: 768px) {	
 				font-size: 50px;
 			}

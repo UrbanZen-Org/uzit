@@ -2,7 +2,6 @@
 
 define( 'THEME_PATH', get_template_directory_uri() );
 if ( ! isset( $content_width ) ) $content_width = 940;
-       
 
 /* ========================================================================================================================
 	
@@ -653,12 +652,13 @@ add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 add_filter('show_admin_bar', '__return_false'); // Remove admin bar
 function change_menus()
 {
-    remove_menu_page( 'admin.php?page=acf-options-options');     
-    add_submenu_page('edit.php?post_type=how_i_uzit','settings', 'How I Uzit Settings', 'edit_pages', 'admin.php?page=acf-options-options');
+    remove_menu_page( 'HIU_Settings');  
+    add_submenu_page('edit.php?post_type=how_i_uzit','settings', 'How I Uzit Settings', 'edit_pages', 'admin.php?page=acf-options-hiu_settings');
 }
-add_action( 'admin_menu', 'change_menus' );
+add_action( 'admin_init', 'change_menus' );
 // Add Options Page
 if (function_exists('acf_add_options_page')) 
 {
-  acf_add_options_page('Options');
+  acf_add_options_page('HIU_Settings');
+  acf_add_options_page('Settings');
 }
