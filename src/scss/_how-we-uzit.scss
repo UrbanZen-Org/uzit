@@ -36,14 +36,16 @@
 			text-transform: uppercase;
 			margin-bottom: 30px;
 			@media screen and (min-width: 768px) {	
-				font-size: 90px;
+				font-size: 50px;
 			}
 			font-weight: bold;
 		}
 	}
 	.how-i-uzit-posts{
+		width: 100%;
 		max-width: 1099px;
-		margin: 4em auto;
+		padding: 4em 0;
+		box-sizing: border-box;
 		@media screen and (min-width: 768px) {		
 			display: flex;
 			align-items: center;
@@ -51,12 +53,14 @@
 			flex-wrap: wrap;
 		}
 		.hiu-post{
-			box-sizing:border-box;
-			padding: 0 10px 20px 10px;
+			padding: 0 20px 20px;
 			width: 100%;
 			text-align: left;
 			position: relative;
+			box-sizing: border-box;
+			display: block;
 			@media screen and (min-width: 480px) {
+				padding: 0 10px 20px;
 				width: 50%;	
 			}
 			@media screen and (min-width: 1024px) {
@@ -68,14 +72,16 @@
 					color: white;
 					h2,p{
 						color: white;
+
 					}
 				}
 			}
 			img{
 				max-width: 100%;
+				display: block;
 			}
 			.post-titles{
-				padding: 0 20px;
+				padding: 10px 20px 0;
 				text-align: center;
 				@media screen and (min-width: 768px) {
 					position: absolute;
@@ -86,11 +92,13 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					color: transparent;					
+					color: transparent;
+					padding: 0px 20px;		
 					@include transition((background .3s ease-in-out));
 				}
 				h2{
 					text-transform: uppercase;
+					margin-bottom: 0;
 				}
 				h2,p{
 					@media screen and (min-width: 768px) {		
