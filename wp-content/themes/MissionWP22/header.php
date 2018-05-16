@@ -88,8 +88,8 @@
                 
                 <div class="logo-container">
                     <div class="clearfix">
-                        <a href="<?php echo $logo_href; ?>" style="position:relative;z-index:9999;">
-                            <img src="<?php echo $logo_src; ?>" alt="<?php echo $logo_title; ?>" />
+                        <a href="/" style="position:relative;z-index:9999;">
+                            <img src="<?php echo get_field('logo','options'); ?>" alt="<?php echo $logo_title; ?>" />
                         </a>
                         <div class="slogan-container" style="float:left;">
                             <a href="<?php echo $logo_href; ?>">

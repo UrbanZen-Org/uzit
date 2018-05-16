@@ -652,7 +652,7 @@ add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
 add_filter('show_admin_bar', '__return_false'); // Remove admin bar
 function change_menus()
 {
-    remove_menu_page( 'HIU_Settings');  
+    remove_menu_page( 'acf-options-hiu_settings');  
     add_submenu_page('edit.php?post_type=how_i_uzit','settings', 'How I Uzit Settings', 'edit_pages', 'admin.php?page=acf-options-hiu_settings');
 }
 add_action( 'admin_init', 'change_menus' );
@@ -662,3 +662,17 @@ if (function_exists('acf_add_options_page'))
   acf_add_options_page('HIU_Settings');
   acf_add_options_page('Settings');
 }
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+function fix_svg_thumb_display() {
+  echo '
+    td.media-icon img[src$=".svg"], img[src$=".svg"].attachment-post-thumbnail { 
+      width: 100% !important; 
+      height: auto !important; 
+    }
+  ';
+}
+add_action('admin_head', 'fix_svg_thumb_display');

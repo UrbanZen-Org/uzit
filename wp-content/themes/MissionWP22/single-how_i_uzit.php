@@ -46,7 +46,7 @@ setup_postdata($post);
         </div>
         
       </div>
-	    <?php get_template_part( 'single-featured-how_i_uzit' ); ?>
+      <?php get_template_part( 'single-featured-how_i_uzit' ); ?>
   	</div>
 
 </div>
