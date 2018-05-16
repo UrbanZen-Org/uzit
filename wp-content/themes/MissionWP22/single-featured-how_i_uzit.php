@@ -22,37 +22,7 @@ $stories = new WP_Query( $args );
 					<img src="<?php echo $thumbnail; ?>">
 					<h4><?php echo get_the_title($story->ID) ?></h4>
 				</div>
-			<?php endforeach; ?>		
-			<?php foreach ($stories->posts as $story): ?>
-				<?php setup_postdata($story); ?>
-				<div class="featured-story">
-					<?php 
-						$thumbnail = wp_get_attachment_url( get_post_thumbnail_id($story->ID));
-					?>
-					<img src="<?php echo $thumbnail; ?>">
-					<h4><?php echo get_the_title($story->ID) ?></h4>
-				</div>
-			<?php endforeach; ?>		
-			<?php foreach ($stories->posts as $story): ?>
-				<?php setup_postdata($story); ?>
-				<div class="featured-story">
-					<?php 
-						$thumbnail = wp_get_attachment_url( get_post_thumbnail_id($story->ID));
-					?>
-					<img src="<?php echo $thumbnail; ?>">
-					<h4><?php echo get_the_title($story->ID) ?></h4>
-				</div>
-			<?php endforeach; ?>		
-			<?php foreach ($stories->posts as $story): ?>
-				<?php setup_postdata($story); ?>
-				<div class="featured-story">
-					<?php 
-						$thumbnail = wp_get_attachment_url( get_post_thumbnail_id($story->ID));
-					?>
-					<img src="<?php echo $thumbnail; ?>">
-					<h4><?php echo get_the_title($story->ID) ?></h4>
-				</div>
-			<?php endforeach; ?>		
+			<?php endforeach; ?>			
 	</div>
 <?php endif; ?>
 
