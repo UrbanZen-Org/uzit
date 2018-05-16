@@ -9,10 +9,11 @@ setup_postdata($post);
         	
     			<div class="post-title-excerpts">
             <div class="title-inner">
-              <a href="/how-i-uzit" class="back-to-hiu">How I Uzit</a>
+              <a href="/how-i-uzit" class="back-to-hiu">How I UZIT</a>
     	  			<h1><?php the_title(); ?></h1>
     	  			<div class="post-excerpt">
     	  				<?php the_excerpt();?>
+                <p><?php echo get_field("location"); ?></p>
     	  			</div>
             </div>
     			</div>

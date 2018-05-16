@@ -131,7 +131,7 @@
 			.back-to-hiu{
 				position: relative;
 				top: -30px;
-				color: white;
+				color: #6DC4DF;
 				// padding-left: 20px;
 				@media screen and (min-width: 768px) {
 					// position: absolute;
@@ -165,6 +165,7 @@
 					text-transform: uppercase;
 				}
 				p{
+					max-width: 500px;
 					font-size: 19px;
 					line-height: 1.3em;
 					letter-spacing: .05em;
