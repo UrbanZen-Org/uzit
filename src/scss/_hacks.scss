@@ -33,3 +33,13 @@
 	box-sizing: border-box;
 	padding: 0 20px;
 }
+@media screen and (max-width: 768px) {
+#cssmenu #menu-uzit{
+	ul.open{
+		display: block!important;
+	}
+}
+#cssmenu > ul.open{
+	max-height: 90% !important;
+}
+}

@@ -44,8 +44,8 @@
             <div class="copyright-container">
                 <ul>
                     <li>CONNECT WITH US</li>    
-                    <li><a href="http://www.facebook.com/urbanzen/" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/urban_zen/" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/urbanzen_uzit/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/urbanzen_uzit" target="_blank">Instagram</a></li>
                     <li><a href="http://vimeo.com/channels/uzit/" target="_blank">Vimeo</a></li>
                     <li><a href="/uzit/contact/">Contact</a></li>
                     <li><span class="copyright">&copy;2018 Urban Zen Foundation. All rights reserved.</span></li>

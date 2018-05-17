@@ -17,37 +17,18 @@ var global = {
     this.mobileMenu();
   },
   mobileMenu: function() {
-
-        $('.menu-item').each(function() {
-            console.log('1');
+        $('.menu-item').each(function() {            
             if ($(this).find("ul li a").length) {
               
                 var self = this;
-                $("<select />").appendTo($(this));
-                $(this).find("select").hide();
-
-                // Create default option "Go to..."
-                $("<option />", {
-                    "selected": "selected",
-                    "value": "",
-                    "text": "Go"
-                }).appendTo($(this).find("select"));
                 $(this).find("a").click(function(e) {
+                  if ($(window).width() <= 768){
                     e.preventDefault();
-                    $(this).find('select').trigger('click');
+                    $(self).find('ul').toggleClass('open');
+                  }
                 });
-                // Populate dropdown with menu items
-                $(this).find("ul li a").each(function() {
-                    var el = $(this);
-                    $("<option />", {
-                        "value": el.attr("href"),
-                        "text": el.text()
-                    }).appendTo($(self).find("select"));
-                });
-
-                $(this).find("select").change(function() {
-                    window.location = $(this).find("option:selected").val();
-                });
+              
+                
             }
         });
 
