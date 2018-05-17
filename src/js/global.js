@@ -21,7 +21,7 @@ var global = {
             if ($(this).find("ul li a").length) {
               
                 var self = this;
-                $(this).find("a").click(function(e) {
+                $(this).find(">a").click(function(e) {
                   if ($(window).width() <= 768){
                     e.preventDefault();
                     $(self).find('ul').toggleClass('open');
