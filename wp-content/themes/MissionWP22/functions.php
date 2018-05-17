@@ -365,7 +365,7 @@ function mission_scripts_styles() {
 	 */
         
         wp_enqueue_script("jquery"); 
-	/*wp_enqueue_script( 'mission-script', get_template_directory_uri() . '/js/script.js', array(), '1.0', true );*/
+	wp_enqueue_script( 'mission-script', get_template_directory_uri() . '/js/script.js', array(), '1.0', true );
 /*        wp_enqueue_script( 'mission-prettyPhoto', get_template_directory_uri() . '/js/jquery.prettyPhoto.js', array(), '1.0', true );*/
         wp_enqueue_script( 'mission-superfish', get_template_directory_uri() . '/js/superfish.js', array(), '1.0', true );
         wp_enqueue_script( 'mission-flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array(), '1.0', true );
