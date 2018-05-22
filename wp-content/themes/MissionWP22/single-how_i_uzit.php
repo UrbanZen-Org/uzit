@@ -39,7 +39,7 @@ setup_postdata($post);
       <div class="container noBannerContent">
         <div class="post-content">
           <?php the_content(); ?>
-          <a data-target="#page_content" class="back-to-top"><div class="up-arrow"></div>TOP</a>
+          
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5accafeeef677a1d"></script>
 
@@ -47,6 +47,11 @@ setup_postdata($post);
         
       </div>
       <?php get_template_part( 'single-featured-how_i_uzit' ); ?>
+      <div class="back-area">
+        <div class="container">
+          <a data-target="#page_content" class="back-to-top"><div class="up-carrot"></div>BACK TO TOP</a>
+        </div>  
+      </div>
   	</div>
 
 </div>

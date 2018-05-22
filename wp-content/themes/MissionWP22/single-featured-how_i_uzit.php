@@ -19,7 +19,7 @@ $stories = new WP_Query( $args );
 						$thumbnail = wp_get_attachment_url( get_post_thumbnail_id($story->ID));
 					?>
 					<img src="<?php echo $thumbnail; ?>">
-					<h3><?php echo get_the_title($story->ID) ?></h3>
+					<h2><?php echo get_the_title($story->ID) ?></h2>
 				</a>
 			<?php endforeach; ?>			
 	</div>
