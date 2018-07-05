@@ -30,7 +30,9 @@
 			font-size: 28px;
 		}
 		.popup-image{
-			width: 50%;
+			@media screen and (min-width: 768px) {		
+				width: 50%;
+			}
 			img{
 				max-width: 100%;
 				display: block;
@@ -40,7 +42,9 @@
 			}
 		}
 		.popup-description-form{
-			width: 50%;	
+			@media screen and (min-width: 768px) {		
+				width: 50%;	
+			}
 			text-align: center;
 			padding: 30px 20px 10px;
 			p, input,h2{
@@ -55,8 +59,9 @@
 				font-size: 14px;
 				letter-spacing: .07em;
 				margin-bottom: 0;
+				line-height: 1.2em;
 			}
-			.mc-field-group{
+			#mc_embed_signup .mc-field-group{
 				padding-bottom: 0;
 			}
 			input{
