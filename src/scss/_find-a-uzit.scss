@@ -11,11 +11,12 @@
 		justify-content: center;
 	}
 	z-index: 99999;
-	// opacity: 0;
-	// visibility: hidden;
+	opacity: 0;
+	visibility: hidden;
 	&.open{
-		opacity: 1;
-		visibility: visible;
+		
+		opacity: 0;
+	visibility: hidden;
 	}
 	.popup-body{
 		background: white;

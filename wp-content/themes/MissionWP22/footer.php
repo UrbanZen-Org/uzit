@@ -196,14 +196,14 @@
 <form action="https://urbanzen.us16.list-manage.com/subscribe/post?u=8ded742a34e557c8b387cfddf&amp;id=cc9b89a5bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="indicates-required"><span class="asterisk">*</span>all fields required</div>
 <div class="mc-field-group">
   
-  <input type="text" placeholder="First Name" value="" name="FNAME" class="" id="mce-FNAME">
+  <input type="text" placeholder="First Name" value="" name="FNAME" class="required" id="mce-FNAME">
 </div>
 <div class="mc-field-group">
   
-  <input type="text" value="" placeholder="Last Name" name="LNAME" class="" id="mce-LNAME">
+  <input type="text" value="" placeholder="Last Name" name="LNAME" class="required" id="mce-LNAME">
 </div>
 <div class="mc-field-group">
   
@@ -212,7 +212,7 @@
 </div>
 <div class="mc-field-group">
   
-  <input type="text" value="" name="MMERGE5" placeholder="Zip Code" class="" id="mce-MMERGE5">
+  <input type="text" value="" name="MMERGE5" placeholder="Zip Code" class="required" id="mce-MMERGE5">
 </div>
   <div id="mce-responses" class="clear">
     <div class="response" id="mce-error-response" style="display:none"></div>
