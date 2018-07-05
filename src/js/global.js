@@ -6,6 +6,11 @@ var unveilhooks = require('unveilhooks');
 var Cookies = require('js-cookie');
 var imagesLoaded = require('imagesloaded');
 var slick = require('slick-carousel');
+var openOnScroll = function(){
+  if ($(window).scrollTop() > 100){
+    global.popup.open();
+  }
+};
 
 var global = {
   init: function(){
@@ -15,6 +20,7 @@ var global = {
     this.scrollTo();
     this.featuredStorySlideshow();
     this.mobileMenu();
+    this.popup.init();
   },
   mobileMenu: function() {
         $('.menu-item').each(function() {            
@@ -85,7 +91,45 @@ var global = {
         $("html, body").animate({ scrollTop: nextSection });
       });
     }
-  }
+  },
+   popup: {
+    init: function(){
+      if($('.find-popup').length){        
+        if (!Cookies.get('newsletter')){
+          Cookies.set('newsletter', 1, { expires: 7 });
+          this.scroll();
+        }          
+        this.actions();
+      }   
+ 
+    },
+    scroll: function(){
+      var self = this;
+      document.addEventListener('scroll', openOnScroll);
+    },
+    actions: function(){
+      var self = this;
+      $('.find-popup,.find-popup .close').click(function(e){
+        self.close();
+      });
+      $('.find-popup .popup-body').click(function(e){
+        e.stopPropagation();
+      });
+      $('.newsletter-callout').click(function(e){
+        self.open();
+      });
+    },
+    open: function(){
+      var self = this;
+      $('.find-popup').addClass('open');
+      $('body').addClass('lock-scroll');
+      document.removeEventListener('scroll', openOnScroll);
+    },
+    close: function(){
+      $('.find-popup').removeClass('open');
+      $('body').removeClass('lock-scroll');
+    }
+  },
 };
 
 module.exports = global;

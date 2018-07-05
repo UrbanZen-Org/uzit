@@ -1,0 +1,79 @@
+.find-popup{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:rgba(0,0,0,.70);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99999;
+	opacity: 0;
+	visibility: hidden;
+	&.open{
+		opacity: 1;
+		visibility: visible;
+	}
+	.popup-body{
+		background: white;
+		width: 800px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color:black;
+		position: relative;
+		.close{
+			position: absolute;
+			top: 14px;
+			right: 20px;
+			font-size: 28px;
+		}
+		.popup-image{
+			width: 50%;
+			img{
+				max-width: 100%;
+				display: block;
+				&.mobile{
+					display: none;
+				}
+			}
+		}
+		.popup-description-form{
+			width: 50%;	
+			text-align: center;
+			padding: 10px 20px;
+			p, input,h2{
+				color:black;
+			}
+			h2{
+				text-transform: uppercase;
+				font-size: 20px;
+				letter-spacing: .15em;
+			}
+			p{
+				font-size: 14px;
+				letter-spacing: .07em;
+			}
+			input{
+				display: inline-block;
+				margin-bottom: 0;
+				border-radius: 0!important;
+				letter-spacing: .07em;
+				font-family: "Conv_HelveticaNeueLTStd-Lt", "Helvetica", "Open Sans", Arial, serif;
+			}
+			button{
+				display: block;
+				margin: 0 auto;
+				background: black;
+				color: white;
+				border:none;
+				height: 34px;
+				padding: 0 20px;
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: .1em;	
+			}
+		}
+	}
+}
