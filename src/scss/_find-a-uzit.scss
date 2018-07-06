@@ -32,6 +32,10 @@
 			top: 14px;
 			right: 20px;
 			font-size: 28px;
+			color: white;
+			@media screen and (min-width: 768px) {	
+				color: black;
+			}
 		}
 		.popup-image{
 			width: 100%;
@@ -82,7 +86,7 @@
 				font-size: 14px;
 				letter-spacing: .07em;
 				margin-bottom: 0;
-				line-height: 1.2em;
+				line-height: 1.5em!important;
 			}
 			#mc_embed_signup .mc-field-group{
 				padding-bottom: 0;
