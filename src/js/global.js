@@ -96,7 +96,7 @@ var global = {
     init: function(){
       if($('.find-popup').length){        
         if (!Cookies.get('newsletter')){
-          Cookies.set('newsletter', 1, { expires: 7 });
+          Cookies.set('newsletter', 1, { expires: 1 });
           this.scroll();
         }          
         this.actions();
