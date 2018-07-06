@@ -14,16 +14,17 @@
 	opacity: 0;
 	visibility: hidden;
 	&.open{
-		
-		opacity: 0;
-	visibility: hidden;
+		opacity: 1;
+		visibility: visible;
 	}
 	.popup-body{
 		background: white;
-		width: 800px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@media screen and (min-width: 768px) {		
+			width: 800px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 		color:black;
 		position: relative;
 		.close{
@@ -61,7 +62,7 @@
 
 		}
 		.popup-description-form{
-			width: 100%;
+			max-width: 100%;
 			display: block;
 			@media screen and (min-width: 768px) {		
 				width: 50%;	
