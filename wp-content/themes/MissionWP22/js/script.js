@@ -120,46 +120,6 @@ jQuery(document).ready(function() {
 
 
 
-    function mobileMenu() {
-
-        jQuery('.menu-item').each(function() {
-            console.log('1');
-            if (jQuery(this).find("ul li a").length) {
-              
-                var self = this;
-                jQuery("<select />").appendTo(jQuery(this));
-                jQuery(this).find("select").hide();
-
-                // Create default option "Go to..."
-                jQuery("<option />", {
-                    "selected": "selected",
-                    "value": "",
-                    "text": "Go"
-                }).appendTo(jQuery(this).find("select"));
-                jQuery(this).find("a").click(function(e) {
-                    e.preventDefault();
-                    jQuery(this).find('select').trigger('click');
-                });
-                // Populate dropdown with menu items
-                jQuery(this).find("ul li a").each(function() {
-                    var el = jQuery(this);
-                    jQuery("<option />", {
-                        "value": el.attr("href"),
-                        "text": el.text()
-                    }).appendTo(jQuery(self).find("select"));
-                });
-
-                jQuery(this).find("select").change(function() {
-                    window.location = jQuery(this).find("option:selected").val();
-                });
-            }
-        });
-
-        // Create the dropdown base
-
-
-    }
-
 
     function select() {
 

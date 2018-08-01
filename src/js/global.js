@@ -21,6 +21,9 @@ var global = {
     this.featuredStorySlideshow();
     this.mobileMenu();
     this.popup.init();
+    document.addEventListener('elm-lastPage', function (e) {
+      $('.elm-button').addClass('hidden');
+    }, false);
   },
   mobileMenu: function() {
         $('.menu-item').each(function() {            

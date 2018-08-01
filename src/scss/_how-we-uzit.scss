@@ -7,7 +7,47 @@
 		}
 	}
 
-
+.elm-wrapper{
+	margin: 0 auto 100px;
+	button{
+		background: none;
+		border: none;
+		display: block;
+		position: relative;
+		outline: none;
+		@include transition((opacity .3s ease-in-out));
+		&.hidden{
+			opacity: 0;
+		}
+		&.is-loading{
+			.elm-loading-anim{
+				opacity: 1;
+			}	
+		}
+	}
+	span{
+		line-height: 40px;
+		font-size: 14px;
+		color: black;
+		background: white;
+		position: relative;
+		display: block;
+		padding: 0 20px;
+	}
+	.elm-loading-anim{
+		outline: none;
+		position: absolute;
+		top: 50px;
+		width: 100px;
+		height: 100px;
+		svg *{	
+			fill: white;
+		}
+		opacity: 0;
+		@include transition((opacity .3s ease-in-out));
+	}
+	
+}
 .how-i-uzit-archive{
 	padding-top: 0;
 	.archive-header{
